@@ -1,0 +1,84 @@
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.editorWrapper {
+    flex: 1;
+    width: 100%;
+}
+
+.monitor {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 180px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 255, 157, 0.2);
+    border-radius: var(--radius-md);
+    padding: 12px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.monitorHeader {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+}
+
+.pulse {
+    width: 6px;
+    height: 6px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 4px var(--color-primary);
+    animation: pulse-slow 2s infinite;
+}
+
+@keyframes pulse-slow {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.metric {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+}
+
+.history {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.keyDot {
+    width: 4px;
+    height: 4px;
+    background: var(--color-primary);
+    border-radius: 1px;
+}

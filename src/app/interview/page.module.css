@@ -1,0 +1,152 @@
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #050507;
+    color: var(--color-text-main);
+    overflow: hidden;
+}
+
+.header {
+    height: 64px;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    background: var(--color-surface);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.sessionInfo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.sessionBadge {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.trustIndicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.trustLabel {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    overflow: hidden;
+}
+
+.editorArea {
+    position: relative;
+    background: #000;
+    border-right: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholderContainer {
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+.placeholderIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 255, 157, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--color-primary);
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sidebar {
+    padding: 24px;
+    background: var(--color-surface);
+    overflow-y: auto;
+}
+
+.section {
+    margin-bottom: 32px;
+}
+
+.section h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+
+.hint {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+.biometricGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.biometricItem {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 4px;
+}
+
+.active {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.inactive {
+    color: #ff4d4d;
+    font-weight: 600;
+}
+
+.pending {
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.assetList {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
