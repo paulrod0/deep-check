@@ -93,8 +93,8 @@ export default function Home() {
             <input type="email" placeholder="enter@enterprise.com" className={styles.input} />
             <button className="btn btn-primary">Get Early Access</button>
           </form>
-          <div style={{ marginTop: '4rem', color: 'var(--color-text-muted)' }}>
-            © 2026 Deep-Check Inc. Built on Google Antigravity.
+          <div className={styles.footerNote}>
+            © 2026 Deep-Check Inc. All rights reserved.
           </div>
         </div>
       </footer>

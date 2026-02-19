@@ -161,7 +161,7 @@ export default function InvestmentDeck() {
                     <h2 className={styles.title}>Secure the <br /> <span className="text-gradient">Next Hire.</span></h2>
                     <p className={styles.subtitle}>Join us in rebuilding trust. We are now opening our Seed round to strategic partners.</p>
                     <div style={{ marginTop: '40px' }}>
-                        <a href="mailto:investors@deep-check.ai" className="btn btn-primary">contact@deep-check.ai</a>
+                        <a href="mailto:pablo@hiumsolutions.com" className="btn btn-primary">pablo@hiumsolutions.com</a>
                     </div>
                 </div>
             </section>
